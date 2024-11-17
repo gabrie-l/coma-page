@@ -1,0 +1,67 @@
+.embla {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  align-items: center;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+  padding: 10px;
+}
+
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.embla__button--prev {
+  left: 10px;
+}
+
+.embla__button--next {
+  right: 10px;
+}
+
+.embla__button__svg {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.embla__dot {
+  background: #000;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 10px;
+  margin: 0 5px;
+  opacity: 0.5;
+  width: 10px;
+}
+
+.embla__dot--selected {
+  background: #fff;
+  opacity: 1;
+}
