@@ -36,24 +36,39 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./static/css/bulma.min.css" />
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="/r/cvpr-cma-anonrepo/static/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/r/cvpr-cma-anonrepo/static/css/bulma-carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/r/cvpr-cma-anonrepo/static/css/bulma-slider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/r/cvpr-cma-anonrepo/static/css/fontawesome.all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
     />
-    <link rel="stylesheet" href="./static/css/index.css" />
-    <link rel="icon" href="./static/images/favicon.svg" />
+    <link rel="stylesheet" href="/r/cvpr-cma-anonrepo/static/css/index.css" />
+    <link rel="icon" href="/r/cvpr-cma-anonrepo/static/images/favicon.svg" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./static/js/fontawesome.all.min.js"></script>
-    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script
+      defer
+      src="/r/cvpr-cma-anonrepo/static/js/fontawesome.all.min.js"
+    ></script>
+    <script src="/r/cvpr-cma-anonrepo/static/js/bulma-carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bulma-carousel/3.0.0/js/bulma-carousel.min.js"></script>
 
-    <script src="./static/js/bulma-slider.min.js"></script>
-    <script src="./static/js/index.js"></script>
+    <script src="/r/cvpr-cma-anonrepo/static/js/bulma-slider.min.js"></script>
+    <script src="/r/cvpr-cma-anonrepo/static/js/index.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         console.log("DOM fully loaded and parsed");
@@ -71,6 +86,56 @@
         console.log("Carousel initialized:", carousels);
       });
     </script>
+    <style>
+      /* Increase the font size of the captions and make them bold */
+      .carousel-item h3 {
+        font-size: 1.5em; /* Adjust the size as needed */
+        font-weight: bold; /* Make the text bold */
+        margin-bottom: 0.5em; /* Ensure there is some spacing below the captions */
+      }
+
+      /* Adjust the container to provide space for the indicators */
+      .carousel-item {
+        margin-bottom: 2em; /* Adjust margin to ensure indicator visibility */
+      }
+
+      /* Position carousel indicators directly below the video content */
+      .carousel-indicators {
+        text-align: center; /* Center-align the indicators */
+        margin-top: 1em; /* Add top margin to space out indicators from the videos */
+      }
+
+      /* Ensure the container is positioned correctly below the carousel */
+      #results-carousel .carousel-indicators {
+        position: static;
+      }
+
+      /* Positioning the navigation buttons for left and right */
+      .carousel-nav-left,
+      .carousel-nav-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .carousel-nav-left {
+        left: 10px; /* Adjust the distance from the left edge */
+      }
+
+      .carousel-nav-right {
+        right: 10px; /* Adjust the distance from the right edge */
+      }
+    </style>
   </head>
   <body>
     <section class="hero">
@@ -92,7 +157,9 @@
       <div class="hero-body">
         <div class="container">
           <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-steve">
+            <!-- Caption -->
+            <div class="carousel-item item-steve">
+              <h3 class="has-text-centered">This is a very cool motion!</h3>
               <video
                 poster=""
                 id="steve"
@@ -104,12 +171,16 @@
                 height="100%"
               >
                 <source
-                  src="./static/videos/placeholder1.mp4"
+                  src="/r/cvpr-cma-anonrepo/static/videos/placeholder1.mp4"
                   type="video/mp4"
                 />
               </video>
             </div>
-            <div class="item item-coffee">
+            <div class="carousel-item item-coffee">
+              <h3 class="has-text-centered">
+                This is another interesting motion
+              </h3>
+              <!-- Caption -->
               <video
                 poster=""
                 id="coffee"
@@ -121,12 +192,14 @@
                 height="100%"
               >
                 <source
-                  src="./static/videos/placeholder3.mp4"
+                  src="/r/cvpr-cma-anonrepo/static/videos/placeholder3.mp4"
                   type="video/mp4"
                 />
               </video>
             </div>
-            <div class="item item-toby">
+            <div class="carousel-item item-toby">
+              <h3 class="has-text-centered">Yet another motion</h3>
+              <!-- Caption -->
               <video
                 poster=""
                 id="toby"
@@ -138,7 +211,7 @@
                 height="100%"
               >
                 <source
-                  src="./static/videos/placeholder2.mp4"
+                  src="/r/cvpr-cma-anonrepo/static/videos/placeholder2.mp4"
                   type="video/mp4"
                 />
               </video>
