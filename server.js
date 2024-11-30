@@ -9,13 +9,10 @@ const app = express();
 app.use(morgan("combined"));
 
 // Serve static files with correct base path for both local and deployment paths
-app.use(
-  "/r/cvpr-cma-anonrepo/static",
-  express.static(path.join(__dirname, "static"))
-);
+app.use("/coma-page/static", express.static(path.join(__dirname, "static")));
 
 // Serve the index.html file for the base path of the deployment
-app.use("/r/cvpr-cma-anonrepo", (req, res) => {
+app.use("/coma-page", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
