@@ -229,10 +229,12 @@
       </div>
     </section>
 
-    <section class="hero is-light is-small">
+    <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <img src="./static/figures/teaser_v2.png" alt="Teaser image."/>
+          <figure class="content has-text-centered">
+            <img src="./static/figures/teaser_v2.png" alt="Teaser image."/>
+          </figure>
           <h2 class="subtitle has-text-centered">
             <b>CoMA</b> can generate high quality motion sequences despite challenging user expectations. 
             Label colors <span style="color: red;">red</span> indicate context-rich moves and/or poses, 
@@ -243,30 +245,34 @@
       </div>
     </section>
 
-    <section class="hero is-small is-light">
-      <div class="container has-text-centered">
-        <!-- Abstract. -->
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            3D human motion generation has seen substantial advancement in recent years. 
-            While state-of-the-art approaches have improved performance significantly, 
-            they still struggle with complex and detailed motions unseen in training data, 
-            largely due to the scarcity of motion datasets and the prohibitive cost of generating new training examples. 
-            To address these challenges, we introduce <b>CoMA</b>, 
-            an agent-based solution for complex human motion generation, editing, and comprehension. 
-            CoMA leverages multiple collaborative agents powered by large language and vision models, 
-            alongside a mask transformer-based motion generator featuring body part-specific encoders and codebooks for fine-grained control. 
-            Our framework enables generation of both short and long motion sequences with detailed instructions, 
-            text-guided motion editing, and self-correction for improved quality. 
-            Evaluations on the HumanML3D dataset demonstrate competitive performance against state-of-the-art methods. 
-            Additionally, we create a set of context-rich, compositional, and long text prompts, where user studies show our method significantly outperforms existing approaches.
-          </p>
-        </div>
+    <section class="section">
+      <div class="container is-max-desktop">
+          <!-- Abstract. -->
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <h2 class="title is-3">Abstract</h2>
+                  <div class="content has-text-justified">
+                      <p>
+                        3D human motion generation has seen substantial advancement in recent years. 
+                        While state-of-the-art approaches have improved performance significantly, 
+                        they still struggle with complex and detailed motions unseen in training data, 
+                        largely due to the scarcity of motion datasets and the prohibitive cost of generating new training examples. 
+                        To address these challenges, we introduce <b>CoMA</b>, 
+                        an agent-based solution for complex human motion generation, editing, and comprehension. 
+                        CoMA leverages multiple collaborative agents powered by large language and vision models, 
+                        alongside a mask transformer-based motion generator featuring body part-specific encoders and codebooks for fine-grained control. 
+                        Our framework enables generation of both short and long motion sequences with detailed instructions, 
+                        text-guided motion editing, and self-correction for improved quality. 
+                        Evaluations on the HumanML3D dataset demonstrate competitive performance against state-of-the-art methods. 
+                        Additionally, we create a set of context-rich, compositional, and long text prompts, where user studies show our method significantly outperforms existing approaches.
+                      </p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </section>
+  </section>
 
-    <section class="hero is-small">
+    <section class="section">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h2 class="title is-3">CoMA overview</h2>
@@ -277,7 +283,7 @@
       </div>
     </section>
 
-    <section class="hero is-small is-light">
+    <section class="section">
       <div class="container has-text-centered">
         <h2 class="title is-3">Multi-modal agents</h2>
         <div class="content has-text-justified">
@@ -288,7 +294,7 @@
             functionalities within four independent agents: the Task
             Planner, Trajectory Editor, Motion Generator and Motion
             Reviewer. Below are brief descriptions of each agent, as well as
-            an example workflow of CoMA. 
+            an example workflow of CoMA.
           </p>
           <br>
         </div>
@@ -353,8 +359,7 @@
           </figure>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <section class="hero is-small">
       <div class="hero-body">
@@ -367,7 +372,7 @@
       </div>
     </section>
 
-    <section class="hero is-small is-light">
+    <section class="hero is-small">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h2 class="title is-3">Comparisons with SOTA (More in Gallery Link)</h2>
