@@ -305,7 +305,7 @@
           <!-- Column for paragraph content -->
           <div class="column is-one-third">
             <div class="content">
-              <h2 class="title is-3">Task Planner</h2>
+              <h2 class="title is-2">Task Planner</h2>
               <p>
                 This agent leverages a LLM (GPT-4o) to perform its three
                 designated tasks: Recaptioning, Temporal Composition and Task
@@ -318,7 +318,7 @@
                 global motion and local editing tasks. Finally, these tasks are
                 fit into four prompts, one for each body part.
               </p>
-              <h2 class="title is-3">Trajectory Editor</h2>
+              <h2 class="title is-2">Trajectory Editor</h2>
               <p>
                 If trajectory information is identified by the Task Planner, the
                 Trajectory Editor prompts GPT-4o to generate a mathematical
@@ -326,7 +326,7 @@
                 This guides the entire generation sequence to follow the
                 explicited path by the user.
               </p>
-              <h2 class="title is-3">Motion Generator</h2>
+              <h2 class="title is-2">Motion Generator</h2>
               <p>
                 After the text processing agents finalized their tasks, the Motion
                 Generator agent, through SPAM, generates a motion sequence with
@@ -335,7 +335,7 @@
                 agent blends the generated tokens for each pair into a single
                 embedding to create the final motion sequence.
               </p>
-              <h2 class="title is-3">Motion Reviewer</h2>
+              <h2 class="title is-2">Motion Reviewer</h2>
               <p>
                 Powered by an instruction fine-tuned VLM module (VideoChat2) using
                 the colored human models rendered through Blender, the Motion
