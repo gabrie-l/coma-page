@@ -8,7 +8,7 @@
     />
     <meta
       name="keywords"
-      content="Human Motion Generation, Multi-modal Generation, Self-correcting framework"
+      content="Human Motion Generation, Multi-modal Agent, Self-correcting framework"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
@@ -51,7 +51,7 @@
       href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
     />
     <link rel="stylesheet" href="/coma-page/static/css/index.css" />
-    <link rel="icon" href="/coma-page/static/images/favicon.svg" />
+    <link rel="icon" href="/coma-page/static/figures/icon.png" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="/coma-page/static/js/fontawesome.all.min.js"></script>
@@ -133,15 +133,96 @@
     </style>
   </head>
   <body>
-    <section class="hero">
+    <section class="publication-header">
       <div class="hero-body">
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title">
-                CoMA: Compositional Human Motion Generation with Multi-modal
-                Agents
-              </h1>
+              <h1 class="title is-1 publication-title">CoMA: Compositional Human Motion Generation with Multi-modal Agents</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://siwensun.github.io/">Shanlin Sun</a><sup>1<b>*</b></sup>,</span>
+                <span class="author-block">
+                  <a href="https://gabrie-l.github.io/">Gabriel De Araujo</a><sup>1<b>*</b></sup>,</span>
+                <span class="author-block">
+                  <a href="https://github.com/FufenNan/">Jiaqi Xu</a><sup>2<b>*</b></sup>,</span>
+                <span class="author-block">
+                  <a href="https://shenghanzhou.github.io/">Shenghan Zhou</a><sup>3<b>*</b></sup>,</span>
+                <span class="author-block">
+                    <a href="https://github.com/zhw123456789/">Hanwen Zhang</a><sup>4</sup></span>
+                <span class="author-block">
+                  <a href="https://github.com/HuangZiheng-o-O/">Ziheng Huang</a><sup>5</sup></span>
+                <span class="author-block">
+                  <a href="https://chenyuyou.me/">Chenyu You</a><sup>6</sup></span>
+                <span class="author-block">
+                    <a href="https://ics.uci.edu/~xhx/">Xiaohui Xie</a><sup>1</sup></span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                * denotes equal contribution.
+              </div>
+    
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>UC Irvine </span> &nbsp &nbsp
+                <span class="author-block"><sup>2</sup>Southeast University </span> &nbsp &nbsp
+                <span class="author-block"><sup>3</sup>Chongqing University </span> &nbsp &nbsp
+                <span class="author-block"><sup>4</sup>Huazhong University of Science and Technology</span> 
+                <span class="author-block"><sup>5</sup>Northeastern University</span> 
+                <span class="author-block"><sup>6</sup>Stony Brook University</span>
+              </div>
+    
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <!-- <span class="link-block">
+                    <a href="https://arxiv.org/abs/2212.09530"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span> -->
+                  <!-- <span class="link-block">
+                    <a href="https://arxiv.org/abs/2405.00900"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span> -->
+                  <!-- Video Link. -->
+                  <!-- <span class="link-block">
+                    <a href="https://www.youtube.com/watch?v=SA5xADW2eJ0&t=4s"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video</span>
+                    </a>
+                  </span> -->
+                  <!-- Code Link. -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/korrawe/harp"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                      </a>
+                  </span> -->
+                  <!-- Gallery Link. -->
+                  <span class="link-block">
+                    <a href="https://www.notion.so/Getting-Started-1459150ac7e880da9f93d7bfa93b14c5?pvs=4"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                          <i class="far fa-images"></i>
+                      </span>
+                      <span>Gallery</span>
+                      </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -149,69 +230,20 @@
     </section>
 
     <section class="hero is-light is-small">
-      <div class="hero-body">
-        <div class="container">
-          <div id="results-carousel" class="carousel results-carousel">
-            <!-- Caption -->
-            <div class="carousel-item item-steve">
-              <h3 class="has-text-centered">This is a very cool motion!</h3>
-              <video
-                poster=""
-                id="steve"
-                autoplay
-                controls
-                muted
-                loop
-                playsinline
-                height="100%"
-              >
-                <source
-                  src="/coma-page/static/videos/placeholder1.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <div class="carousel-item item-coffee">
-              <h3 class="has-text-centered">
-                This is another interesting motion
-              </h3>
-              <!-- Caption -->
-              <video
-                poster=""
-                id="coffee"
-                autoplay
-                controls
-                muted
-                loop
-                playsinline
-                height="100%"
-              >
-                <source
-                  src="/coma-page/static/videos/placeholder3.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-            <div class="carousel-item item-toby">
-              <h3 class="has-text-centered">Yet another motion</h3>
-              <!-- Caption -->
-              <video
-                poster=""
-                id="toby"
-                autoplay
-                controls
-                muted
-                loop
-                playsinline
-                height="100%"
-              >
-                <source
-                  src="/coma-page/static/videos/placeholder2.mp4"
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <figure class="content has-text-centered">
+            <img src="./static/figures/teaser_v2.png"
+                     class="column is-6 is-offset-5 has-text-centered"
+                     alt="Teaser image."
+                    />
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            <b>CoMA</b> can generate high quality motion sequences despite challenging user expectations. 
+            Label colors <span style="color: red;">red</span> indicate context-rich moves and/or poses, 
+            <span style="color: #e598e5;">purple</span> indicate spatially compositional motions and 
+            <span style="color: gray;">gray</span> indicate trajectory-editing instructions.
+          </h2>
         </div>
       </div>
     </section>
@@ -224,25 +256,18 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                3D human motion generation has seen substantial advancement in
-                recent years. While state of the art approaches have improved
-                performance significantly, they still struggle with complex and
-                detailed motions unseen in training data, largely due to the
-                scarcity of motion datasets and the prohibitive cost of
-                generating new training examples. To address these challenges,
-                we introduce CoMA, an agent based solution for complex human
-                motion generation, editing, and comprehension. CoMA leverages
-                multiple collaborative agents powered by large language and
-                vision models, alongside a mask transformer based motion
-                generator featuring body part specific encoders and codebooks
-                for fine grained control. Our framework enables generation of
-                both short and long motion sequences with detailed instructions,
-                text guided motion editing, and self correction for improved
-                quality. Evaluations on the HumanML3D dataset demonstrate
-                competitive performance against state of the art methods.
-                Additionally, we create a set of context rich, compositional,
-                and long text prompts, where user studies show our method
-                significantly outperforms existing approaches.
+                3D human motion generation has seen substantial advancement in recent years. 
+                While state-of-the-art approaches have improved performance significantly, 
+                they still struggle with complex and detailed motions unseen in training data, 
+                largely due to the scarcity of motion datasets and the prohibitive cost of generating new training examples. 
+                To address these challenges, we introduce <b>CoMA</b>, 
+                an agent-based solution for complex human motion generation, editing, and comprehension. 
+                CoMA leverages multiple collaborative agents powered by large language and vision models, 
+                alongside a mask transformer-based motion generator featuring body part-specific encoders and codebooks for fine-grained control. 
+                Our framework enables generation of both short and long motion sequences with detailed instructions, 
+                text-guided motion editing, and self-correction for improved quality. 
+                Evaluations on the HumanML3D dataset demonstrate competitive performance against state-of-the-art methods. 
+                Additionally, we create a set of context-rich, compositional, and long text prompts, where user studies show our method significantly outperforms existing approaches.
               </p>
             </div>
           </div>
@@ -335,7 +360,7 @@
           <figure class="image is-3by4">
             <img
               class="vertical-image"
-              src="static/figures/workflow.png"
+              src="static/figures/coma_example.png"
               alt="Side image"
             />
           </figure>
@@ -357,7 +382,10 @@
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h2 class="title is-3">Generation gallery</h2>
+          <h2 class="title is-3">Comparisons with SOTA (More in Gallery Link)</h2>
+          <div class="column is-centered"></div>
+            <img src="static/figures/comp.png" alt="cars peace" />
+          </div>
         </div>
       </div>
     </section>
